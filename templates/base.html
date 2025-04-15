@@ -14,7 +14,7 @@
 
 <body class="bg-light">
     <div class="container mt-4">
-        <h1 class="mt-4">Gstión de Pacientes</h1>
+        <h1 class="mt-4">Gestión de Pacientes</h1>
 
         <!--Sección para mostrar los mensajes 'flash'(mensajes temporales)-->
         {% with messages = get_flashed_messages() %}
@@ -23,6 +23,10 @@
         <button type='button' class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
         {% endif %}
         {% endwith %}
+
+        <!--Bloque de contenido expecífico de cada página-->
+        {% block content %}
+        {% endblock %}
     </div>
 
     <!-- Enlace a Bootstrap JS -->
