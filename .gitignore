@@ -1,0 +1,15 @@
+# Archivos del entorno virtual que vamos a ignorar
+.venv/
+
+
+# Archivos de configuración del entorno virtual que vamos a ignorar
+__pycache__/
+
+#Variable de entorno
+.env
+
+
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar paciente</title>
+
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body class="container mt-5">
+    <h1>Editar paciente</h1>
+    <form action="" method="post">
+        <div class="mb-3">
+            <!--Campo de testo par el nomnbre del paciente -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" value="{{ paciente[1] }}" class="form-control"><!-- 'name' define la clave del dato enviado-->
+        </div>
+
+        <div class="mb-3">
+            <!--Campo numérico para la edad del paciente -->
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" value="{{ paciente[2] }}" class="form-control">
+        </div>
+        <!--Campo de texto para el diagnóstico del paciente -->
+        <div class="mb-3">
+            <label for="diagnostico">Diagnóstico:</label>
+            <input type="text" name="diagnostico" id="diagnostico" value="{{ paciente[3] }}" class="form-control"><!-- 'name' define la clave del dato enviado-->
+        </div>
+
+        <!--Botón para enviar los datos del formulario -->
+        <button type="submit" class ="btn btn-success">Guardar cambios</button><br><br>
+
+
+    </form>
+    <br><br>
+
+    <!-- Enlace para volver a la lista de pacientes -->
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Volver a la lista de pacientes</a><br><br>
+
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar paciente</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body class="container mt-5">
+    <h1>Agregar Paciente</h1>
+    <form method="post">
+        <!-- Comando par el nombre del paciente-->
+        <div class="mb-3">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="form-control"><!-- 'name' define la clave del dato enviado-->
+        </div>
+
+        <!-- Comando para la edad del paciente-->
+        <div class="mb-3">
+            <label for="edad">Edad:</label>
+            <input type="text" name="edad" id="edad" class="form-control"><!-- 'name' define la clave del dato enviado-->
+        </div>
+
+        <!--Comando para el diagnóstico del paciente-->
+        <div class="mb-3">
+            <label for="diagnostico">Diagnóstico:</label>
+            <input type="text" name="diagnostico" id="diagnostico" class="form-control"><!-- 'name' define la clave del dato enviado-->
+        </div>
+
+        <!--  botón de enviar datos-->
+        <button type="submit" class="btn btn-success">Guardar</button>
+
+        <!--  enlace para volver a la lista de pacientes-->
+        <a href="{{url_for('index')}}" class=" btn btn-secundary">Volver a la lista de pacientes</a>
+
+
+
+    </form>
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
