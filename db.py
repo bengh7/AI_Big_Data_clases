@@ -88,3 +88,4 @@ def eliminar_paciente(id):
     conn.commit()
     #cerramos conexión
     conn.close()
+
